@@ -29,7 +29,7 @@ export default function Dashboard() {
 
 useEffect(() => {
     // Update the document title using the browser API
-    const data = fetch("/.netlify/functions/" + "async-dadjoke")
+    const data = fetch("/.netlify/functions/async-dadjoke")
       .then(response => response.json())
       
   console.log(data);

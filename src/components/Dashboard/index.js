@@ -29,10 +29,10 @@ export default function Dashboard() {
 
 useEffect(() => {
     // Update the document title using the browser API
-    const data = fetch("/.netlify/functions/async-dadjoke")
-      .then(response => response.json())
+    const data =  fetch("/.netlify/functions/async-dadjoke")
+      .then(response => console.log(response.json()))
       
-  console.log(data);
+  
   });
   return (
       <div className="min-h-full">

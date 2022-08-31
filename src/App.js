@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import logo from "./logo.svg"
+import logo from "./logo.svg";
+import Dashboard from "./components/Dashboard";
 import "./App.css"
 
 class LambdaDemo extends Component {
@@ -36,10 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+       <Dashboard></Dashboard>
           <LambdaDemo />
         </header>
       </div>
